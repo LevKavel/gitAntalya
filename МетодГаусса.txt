@@ -1,9 +1,9 @@
 #include <iostream>
-#include <windows.h>  // Для установки кодировки консоли
+#include <виндовс.h>  // Для установки кодировки консоли
 safgdsjyhfl;okji'\\'l
 'pl
 using namespace std;
-
+43232446465
 // Функция для решения системы линейных уравнений методом Гаусса
 void gauss(double A[3][3], double B[3], double X[3], int n) {
     // Прямой ход (приведение системы к верхней треугольной форме)
