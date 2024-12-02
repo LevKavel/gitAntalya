@@ -1,0 +1,54 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+double F(double x)
+{
+  return 2 * cos(x) - 5 * pow(x,2);
+}
+
+
+
+int main()
+{
+  bool next = true;
+  double a, b, eps, x, x1, h, C;
+  double  M = 0, M1 = 0;
+  a = 0;
+  b = 1;
+  h = (b - a) / 100;
+  eps = 0.0001;
+  x = a;
+  do
+  {
+    M1 = abs(F(x + h) - F(x)) / h;
+    if (M <= M1)
+      M = M1;
+    x = x + h;
+  } while (x < b);
+
+  M += 1;
+  if (F(a) > F(b))
+    C = 1;
+  else
+    C = -1;
+
+
+  x = (a + b) / 2;
+  do
+  {
+    x1 = x + (C * F(x) / M);
+    if ((abs(x1 - x) > eps))
+    {
+      x = x1;
+      next = true;
+    }
+    else
+      next = false;
+  } while (next);
+
+  cout << x1;
+
+
+
+}
