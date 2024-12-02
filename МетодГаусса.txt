@@ -1,6 +1,7 @@
 #include <iostream>
 #include <windows.h>  // Для установки кодировки консоли
-КУЧААААААААААА
+safgdsjyhfl;okji'\\'l
+'pl
 using namespace std;
 fffffffffffffffffff
 // Функция для решения системы линейных уравнений методом Гаусса
